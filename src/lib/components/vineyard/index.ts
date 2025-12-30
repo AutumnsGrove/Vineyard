@@ -1,0 +1,38 @@
+/**
+ * Vineyard Components
+ * Shared showcase/documentation components for the Grove ecosystem
+ *
+ * Usage:
+ * import { VineyardLayout, FeatureCard, StatusBadge } from '@autumnsgrove/groveengine/vineyard';
+ */
+
+// Layout
+export { default as VineyardLayout } from './VineyardLayout.svelte';
+
+// Feature Display
+export { default as FeatureCard } from './FeatureCard.svelte';
+export { default as StatusBadge } from './StatusBadge.svelte';
+
+// Demo & Code
+export { default as DemoContainer } from './DemoContainer.svelte';
+export { default as CodeExample } from './CodeExample.svelte';
+
+// Access Control
+export { default as TierGate } from './TierGate.svelte';
+
+// Roadmap
+export { default as RoadmapSection } from './RoadmapSection.svelte';
+
+// Re-export types
+export type {
+  VineyardStatus,
+  GroveTool,
+  GroveTier,
+  VineyardLayoutProps,
+  FeatureCardProps,
+  StatusBadgeProps,
+  DemoContainerProps,
+  CodeExampleProps,
+  TierGateProps,
+  RoadmapSectionProps
+} from '../../types/index.js';

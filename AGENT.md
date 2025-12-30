@@ -5,17 +5,21 @@
 ---
 
 ## Project Purpose
-[Fill in: What this project does - 1-2 sentences]
+Vineyard is a Svelte 5 component library providing shared showcase/documentation components for the Grove ecosystem. Each Grove tool implements a `/vineyard` route using these components to create consistent, demo-first documentation pages.
 
 ## Tech Stack
-[Fill in: Technologies, frameworks, and languages used]
-- Language:
-- Framework:
-- Key Libraries:
-- Package Manager:
+- Language: TypeScript
+- Framework: Svelte 5 (with runes)
+- Key Libraries: Svelte 5, lucide-svelte (icons)
+- Package Manager: pnpm
+- Target: Published as `@autumnsgrove/groveengine/vineyard`
 
 ## Architecture Notes
-[Fill in: Key architectural decisions, patterns, or structure]
+- Components use Svelte 5 runes ($state, $derived, $props)
+- Shared status badge system: Ready | Preview | Demo | Coming Soon | In Development
+- Components designed for composition via slots
+- Follows Grove glassmorphism aesthetic with warm color palette
+- All components exported from single `index.ts` entry point
 
 ---
 

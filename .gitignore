@@ -1,4 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.svelte-kit/
+build/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
 secrets.json
-*.log
-__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Cache
+.cache/
+.turbo/
+
+# Test coverage
+coverage/
+
+# Package files (if using npm pack)
+*.tgz
+
+# Temporary files
+.tmp/
+tmp/

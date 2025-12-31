@@ -24,15 +24,15 @@
 - [x] Create responsive layouts (mobile-first)
 - [x] Add hover effects and transitions
 
-## Phase 3 - Integration
-- [ ] Add to Lattice (@autumnsgrove/groveengine)
-- [ ] Test exports from @autumnsgrove/groveengine/vineyard
+## Phase 3 - Integration (PARTIAL)
+- [x] Add to Lattice (@autumnsgrove/groveengine)
+- [x] Test exports from @autumnsgrove/groveengine/vineyard
 - [ ] Create example Vineyard page (Amber or Foliage)
-- [ ] Document component usage patterns
+- [x] Document component usage patterns (AgentUsage/vineyard_integration.md)
 
-## Phase 4 - Polish
-- [ ] Add copy-to-clipboard for CodeExample
-- [ ] Add pulse animation for in-development status
+## Phase 4 - Polish (PARTIAL)
+- [x] Add copy-to-clipboard for CodeExample
+- [x] Add pulse animation for in-development status
 - [ ] Add unit tests for components
 - [ ] Add Storybook or similar for component preview
 - [ ] Write component documentation

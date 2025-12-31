@@ -8,21 +8,21 @@
 - [x] Create component index.ts with exports
 - [x] Update AGENT.md with project details
 
-## Phase 1 - Core Components
-- [ ] Implement StatusBadge with proper styling (5 statuses)
-- [ ] Implement VineyardLayout with hero section and Grove aesthetic
-- [ ] Implement FeatureCard with icon support (lucide-svelte)
-- [ ] Implement DemoContainer with mock data indicator
-- [ ] Implement CodeExample with syntax highlighting
-- [ ] Implement TierGate with tier comparison logic
-- [ ] Implement RoadmapSection with visual timeline
+## Phase 1 - Core Components (COMPLETE)
+- [x] Implement StatusBadge with proper styling (5 statuses)
+- [x] Implement VineyardLayout with hero section and Grove aesthetic
+- [x] Implement FeatureCard with icon support (lucide-svelte)
+- [x] Implement DemoContainer with mock data indicator
+- [x] Implement CodeExample with syntax highlighting
+- [x] Implement TierGate with tier comparison logic
+- [x] Implement RoadmapSection with visual timeline
 
-## Phase 2 - Styling & Design
-- [ ] Add Grove glassmorphism styles
-- [ ] Implement warm color palette from Foliage
-- [ ] Add Lexend font configuration
-- [ ] Create responsive layouts (mobile-first)
-- [ ] Add hover effects and transitions
+## Phase 2 - Styling & Design (COMPLETE)
+- [x] Add Grove glassmorphism styles
+- [x] Implement warm color palette from Foliage
+- [x] Add Lexend font configuration
+- [x] Create responsive layouts (mobile-first)
+- [x] Add hover effects and transitions
 
 ## Phase 3 - Integration
 - [ ] Add to Lattice (@autumnsgrove/groveengine)

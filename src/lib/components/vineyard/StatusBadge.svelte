@@ -17,11 +17,6 @@
 
   let { status }: StatusBadgeProps = $props();
 
-  // TODO: Implement status badge
-  // - Different colors/styles per status
-  // - Consistent sizing
-  // - Optional pulse animation for in-development
-
   const labels: Record<string, string> = {
     'ready': 'Ready',
     'preview': 'Preview',
@@ -36,28 +31,58 @@
 </span>
 
 <style>
-  /* STUB: Styles to be implemented */
   .status-badge {
-    /* Badge base styles */
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
   }
 
   .status-badge[data-status="ready"] {
-    /* Green, solid */
+    background-color: #22c55e;
+    color: white;
+    box-shadow: 0 1px 3px rgba(34, 197, 94, 0.3);
   }
 
   .status-badge[data-status="preview"] {
-    /* Yellow, dashed border */
+    background-color: transparent;
+    color: #d97706;
+    border: 2px dashed #f59e0b;
   }
 
   .status-badge[data-status="demo"] {
-    /* Blue, labeled */
+    background-color: #3b82f6;
+    color: white;
+    box-shadow: 0 1px 3px rgba(59, 130, 246, 0.3);
   }
 
   .status-badge[data-status="coming-soon"] {
-    /* Gray, subtle */
+    background-color: #f5f5f4;
+    color: #6b7280;
+    border: 1px solid #e5e5e5;
   }
 
   .status-badge[data-status="in-development"] {
-    /* Orange, pulsing */
+    background-color: #f97316;
+    color: white;
+    box-shadow: 0 1px 3px rgba(249, 115, 22, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.85;
+      transform: scale(1.02);
+    }
   }
 </style>

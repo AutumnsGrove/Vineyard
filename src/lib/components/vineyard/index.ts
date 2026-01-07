@@ -23,6 +23,10 @@ export { default as TierGate } from './TierGate.svelte';
 // Roadmap
 export { default as RoadmapSection } from './RoadmapSection.svelte';
 
+// Authentication
+export { default as AuthButton } from './AuthButton.svelte';
+export { default as UserMenu } from './UserMenu.svelte';
+
 // Re-export types
 export type {
   VineyardStatus,
@@ -34,5 +38,14 @@ export type {
   DemoContainerProps,
   CodeExampleProps,
   TierGateProps,
-  RoadmapSectionProps
+  RoadmapSectionProps,
+  BetterAuthUser,
+  BetterAuthSession,
+  BetterAuthSessionResponse,
+  BetterAuthProvider,
+  AuthButtonProps,
+  UserMenuProps
 } from '../../types/index.js';
+
+// Re-export auth utilities
+export { signIn, signOut, getSession, isAuthenticated } from '../../auth/index.js';

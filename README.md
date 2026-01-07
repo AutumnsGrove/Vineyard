@@ -23,8 +23,12 @@ pnpm add @autumnsgrove/vineyard
 | **CodeExample** | Syntax-highlighted code blocks with copy-to-clipboard functionality |
 | **TierGate** | Tier-based access control with blur preview and upgrade prompts |
 | **RoadmapSection** | Visual timeline showing built, in-progress, and planned features |
+| **AuthButton** | Authentication button with Better Auth integration for sign in/out |
+| **UserMenu** | User profile menu with avatar, email, and sign out functionality |
 
 ## Usage
+
+### Basic Example
 
 ```svelte
 <script>
@@ -48,6 +52,37 @@ pnpm add @autumnsgrove/vineyard
   />
 </VineyardLayout>
 ```
+
+### With Authentication
+
+```svelte
+<script>
+  import {
+    VineyardLayout,
+    AuthButton,
+    UserMenu,
+    getSession
+  } from '@autumnsgrove/vineyard/vineyard';
+  import { onMount } from 'svelte';
+
+  let user = $state(null);
+
+  onMount(async () => {
+    const session = await getSession();
+    user = session.user;
+  });
+</script>
+
+<VineyardLayout tool="amber" tagline="Your files, preserved" status="preview">
+  {#if user}
+    <UserMenu />
+  {:else}
+    <AuthButton provider="google" />
+  {/if}
+</VineyardLayout>
+```
+
+For complete authentication integration guide, see [docs/better-auth-integration.md](docs/better-auth-integration.md).
 
 ## Status Badge Types
 

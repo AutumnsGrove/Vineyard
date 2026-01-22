@@ -30,6 +30,7 @@ pnpm-debug.log*
 # Cache
 .cache/
 .turbo/
+__pycache__/
 
 # Test coverage
 coverage/
@@ -40,3 +41,4 @@ coverage/
 # Temporary files
 .tmp/
 tmp/
+.baseproject-backup-*/
